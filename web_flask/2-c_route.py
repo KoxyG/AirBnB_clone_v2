@@ -8,20 +8,20 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
-def hello_world():
+@app.route("/", strict_slashes=False)
+def hello_hbnb():
     """Displays HBNB!"""
     return "Hello HBNB!"
 
-@app.route('/hbnb', strict_slashes=False)
+@app.route("/hbnb", strict_slashes=False)
 def hbnb():
     """Displays HBNB"""
     return "HBNB"
 
-@app.route('/c/<text>', strict_slashes=False)
+@app.route("/c/<text>", strict_slashes=False)
 def c_text():
     """Displays C"""
-    text = replace('_', ' ')
+    text = text.replace('_', ' ')
     return "C {}".format(text)
 
 
