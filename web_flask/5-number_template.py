@@ -44,7 +44,7 @@ def number(n):
     if n == isinstance(n, int):
         return "{} is a number".format(n)
 
-@app.route("/number_template/<n>", strict_slashs=False)
+@app.route("/number_template/<int:n>", strict_slashs=False)
 def number_template(n):
     """Return an integer n"""
 
