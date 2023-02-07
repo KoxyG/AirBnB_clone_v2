@@ -40,8 +40,8 @@ def python(text="is cool"):
 def number(n):
     """Displays m is a nmber if n is an integer"""
 
-    n = str(n)
-    return "{} is a number".format(n)
+    if n == isinstance(n, int):
+        return "{} is a number".format(n)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
